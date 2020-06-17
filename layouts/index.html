@@ -4,29 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TaufiqHdyt</title>
+  <title>{{ .Site.Title }}</title>
 
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 </head>
 
 <body>
+
+  <header>
+    <section id="profile-image">
+      <div class="image-container">
+        IMG
+      </div>
+    </section>
+    <section id="profile-summary">
+      <div id="nickname">
+        <h1 class="name">{{ .Site.Title }}</h1>
+        <h2 class="position">Blogger</h2>
+      </div>
+    </section>
+  </header>
   
   <main>
-
-    <header>
-      <section id="profile-image">
-        <div class="image-container">
-          IMG
-        </div>
-      </section>
-      <section id="profile-summary">
-        <div id="nickname">
-          <h1 class="name">TaufiqHdyt</h1>
-          <h2 class="position">Blogger</h2>
-        </div>
-      </section>
-    </header>
 
     <section id="portofolio">
       <div id="work">
@@ -40,18 +40,18 @@
                 {{ .Title }}
               </a>
             </p>
-            <small>{{ .Params.description }}</small>
+            <p><small>{{ .Params.description }}</small></p>
           </article>
           {{ end }}
         </div>
       </div>
     </section>
     
-    <footer>
-      <section>Footer</section>
-    </footer>
-  
   </main>
+  
+  <footer>
+    <section id="credit"><p>&COPY; 2020 &#8226; <a href="{{ .Site.Home }}">{{ .Site.Title }}</a></p></section>
+  </footer>
 
 </body>
 

@@ -1,7 +1,7 @@
 ---
 title: ArtTerror23's Portofolio Website
 date: 2018-06-06T05:00:00.000Z
-description: Web Programming final project about company profile. Developed in 2018.
+description: Developed in 2018.
 ---
 **Features:**
 
