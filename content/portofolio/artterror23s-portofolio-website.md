@@ -11,6 +11,7 @@ description: Web Programming final project about company profile. Developed in 2
 4. Responsive Web Layout
 
 **Team:**
+
 * Aminudin N. Ichsan
 * Arif Setyo N.
 * Taufiq Hidayat
