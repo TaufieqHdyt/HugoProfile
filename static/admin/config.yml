@@ -4,6 +4,11 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
+  - name: 'contact'
+    label: 'Contact'
+    folder: 'content/contact'
+    create: false
+    slug: '{{slug}}'
   - name: 'gallery'
     label: 'Gallery'
     folder: 'content/gallery'
