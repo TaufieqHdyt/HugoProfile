@@ -14,9 +14,8 @@ if (workbox) {
   const version = workbox.core.cacheNames.suffix;
   workbox.precaching.precacheAndRoute([
     { url: FALLBACK_HTML_URL, revision: null },
-    { url: "/manifest.json", revision: null },
-    { url: "/favicon.ico", revision: null },
-    { url: "/css/roboto.css", revision: null },
+    { url: "/manifest.webmanifest", revision: null },
+    { url: "/img/icons/AR23logo192.png", revision: null },
   ]);
 
   var defaultStrategy = new workbox.strategies.NetworkFirst();
