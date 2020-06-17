@@ -181,6 +181,18 @@ blockquote cite {
   margin: .5rem 0;
 }
 
+/* Single Page */
+article {
+  display:unset;
+}
+div.content p img {
+  width:100%;
+}
+div.content ol, div.content ul {
+  width:50%;
+  text-align: left;
+}
+
 /* Contact Page */
 div.contact-form {
   text-align: left;

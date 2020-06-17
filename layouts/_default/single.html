@@ -2,7 +2,7 @@
   {{ .Title }} &ndash; {{ .Site.Title }}
 {{ end }}
 {{ define "main" }}
-<article>
+<article class="singlepage">
   <h1>{{ .Title }}</h1>
   <time datetime="{{ .Date }}">{{ .PublishDate.Format "January 2, 2006" }}</time>
   <p class="description">{{ .Params.description }}</p>
