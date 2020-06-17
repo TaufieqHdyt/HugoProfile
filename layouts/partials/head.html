@@ -7,7 +7,7 @@
   {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
   {{ hugo.Generator }}
 
-  {{ $manifest := resources.Get "manifest.webmanifest" | minify }}
+  {{ $manifest := resources.Get "manifest.webmanifest" }}
   <link rel="manifest" href="{{ $manifest.Permalink }}">
 
   {{ $styles := resources.Get "css/style.css" | minify }}
