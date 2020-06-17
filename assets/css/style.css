@@ -182,7 +182,7 @@ blockquote cite {
 }
 
 /* Single Page */
-article {
+article.singlepage {
   display:unset;
 }
 div.content p img {
