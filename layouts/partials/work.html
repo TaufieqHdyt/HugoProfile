@@ -4,6 +4,9 @@
   <div class="projects">
     {{ range (where .Pages "Section" "portofolio") }}
     <div class="item">
+      <div class="container">
+        <img srcset="{{ .Params.thumbnail }} 300w" width="100%" alt="{{ .Params.Title }}">
+      </div>
       <p>
         <a href="{{ .RelPermalink }}">
           {{ .Title }}
