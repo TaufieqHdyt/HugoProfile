@@ -1,37 +1,45 @@
-<section id="contact">
-  <div class="email">
-    <h3>Email</h3>
-    <p>Get in touch with me via Contact Form Below.</p>
-    <div class="contact-form">
-      <form name="contact-form" action="POST" data-netlify="true">
-        <div class="contact-name">
-          <p><label for="nickname">Name<span>*</span></label></p>
-          <input type="text" name="nickname" placeholder="Nick Name" required>
-        </div>
-        <div class="contact-email">
-          <p><label for="email">Email<span>*</span></label></p>
-          <input type="email" name="email" placeholder="mail@domain.com" required>
-        </div>
-        <div class="contact-phone">
-          <p><label for="phone">Phone Number<span>*</span></label></p>
-          <input type="tel" name="phone" placeholder="628123456789" pattern="[0-9]+" required>
-        </div>
-        <div class="contact-option">
-          <p><label for="inquiry">Inquiry<span>*</span></label></p>
-          <select name="inquiry" required>
-            <option value="" disabled selected hidden>Select Inquiry...</option>
-            <option value="question">Question</option>
-            <option value="project">Project</option>
-          </select>
-        </div>
-        <div class="contact-message">
-          <p><label for="message">Message<span>*</span></label></p>
-          <textarea name="message" id="contact-message" cols="30" rows="10" placeholder="Input your message here." required></textarea>
-        </div>
-        <div class="submit">
-          <input type="submit" value="Send">
-        </div>
-      </form>
+{{ define "main" }}
+<article>
+  <section id="contact">
+    <div class="email">
+      <h3>Email</h3>
+      <p>Get in touch with me via Contact Form Below.</p>
+      <div class="contact-form">
+        <form name="contact-form" action="POST" data-netlify="true">
+          <div class="contact-name">
+            <p><label for="nickname">Name<span>*</span></label></p>
+            <input type="text" name="nickname" placeholder="Nick Name" required>
+          </div>
+          <div class="contact-email">
+            <p><label for="email">Email<span>*</span></label></p>
+            <input type="email" name="email" placeholder="mail@domain.com" required>
+          </div>
+          <div class="contact-phone">
+            <p><label for="phone">Phone Number<span>*</span></label></p>
+            <input type="tel" name="phone" placeholder="628123456789" pattern="[0-9]+" required>
+          </div>
+          <div class="contact-option">
+            <p><label for="inquiry">Inquiry<span>*</span></label></p>
+            <select name="inquiry" required>
+              <option value="" disabled selected hidden>Select Inquiry...</option>
+              <option value="question">Question</option>
+              <option value="project">Project</option>
+            </select>
+          </div>
+          <div class="contact-message">
+            <p><label for="message">Message<span>*</span></label></p>
+            <textarea name="message" id="contact-message" cols="30" rows="10" placeholder="Input your message here." required></textarea>
+          </div>
+          <div class="submit">
+            <input type="submit" value="Send">
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+  <hr/>
+  <section id="social">
+    {{- partial "social.html" . -}}
+  </section>
+</article>
+{{ end }}
