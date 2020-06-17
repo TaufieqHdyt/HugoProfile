@@ -6,14 +6,14 @@
       <p>Project I've been working on.</p>
       <div class="projects">
         {{ range (where .Pages "Section" "portofolio") }}
-        <article>
+        <div>
           <p>
             <a href="{{ .RelPermalink }}">
               {{ .Title }}
             </a>
           </p>
           <p><small>{{ .Params.description }}</small></p>
-        </article>
+        </div>
         {{ end }}
       </div>
     </div>

@@ -1,38 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ .Site.Title }}</title>
-
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
-</head>
+{{- partial "head.html" . -}}
 
 <body>
 
-  <header>
-    <section id="profile-image">
-      <div class="image-container">
-        IMG
-      </div>
-    </section>
-    <section id="profile-summary">
-      <div id="nickname">
-        <h1 class="name">{{ .Site.Title }}</h1>
-        <h2 class="position">Blogger</h2>
-      </div>
-    </section>
-  </header>
+  <main id="wrapper">
   
-  {{ block "main" . }}
-  
-  {{ end }}
-  
-  <footer>
-    <section id="credit"><p>&COPY; 2020 &#8226; <a href="{{ .Sites.First.Home.RelPermalink }}">{{ .Site.Title }}</a></p></section>
-  </footer>
+    {{- partial "header.html" . -}}
+    
+    {{ block "main" . }}
+    
+    {{ end }}
+    
+    {{- partial "header.html" . -}}
+    
+  </main>
 
 </body>
 
