@@ -1,0 +1,16 @@
+<div id="work">
+  <h3>Gallery</h3>
+  <p>Photograph Showcase.</p>
+  <div class="photos">
+    {{ range (where .Pages "Section" "gallery") }}
+    <div class="item">
+      <p>
+        <a href="{{ .RelPermalink }}">
+          {{ .Title }}
+        </a>
+      </p>
+      <p><small>{{ .Params.description }}</small></p>
+    </div>
+    {{ end }}
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="quote">
+  <h3>Quotes</h3>
+  <p>Some Inspirational Quote.</p>
+  <div class="quote-list">
+    {{ range (where .Pages "Section" "quote") }}
+    <blockquote>
+      <p>{{ .Content }}</p>
+      <cite>— {{ .Params.description }}</cite>
+    </blockquote>
+    {{  end  }}
+  </div>
+</div>

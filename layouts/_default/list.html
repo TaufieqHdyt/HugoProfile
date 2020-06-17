@@ -1,22 +1,19 @@
 {{ define "main" }}
 <article>
-  <section id="portofolio">
-    <div id="work">
-      <h3>Recent Works</h3>
-      <p>Project I've been working on.</p>
-      <div class="projects">
-        {{ range (where .Pages "Section" "portofolio") }}
-        <div class="item">
-          <p>
-            <a href="{{ .RelPermalink }}">
-              {{ .Title }}
-            </a>
-          </p>
-          <p><small>{{ .Params.description }}</small></p>
-        </div>
-        {{ end }}
-      </div>
+  <section id="about">
+    <div id="resume">
+      <h3>About</h3>
+      <p>Hi, my name is <strong>Taufiq</strong>. I am from <strong>Solo, Indonesia</strong>.</p>
+      <p><strong>Web</strong> Enthusiast. Love in <strong>Mobile Photographing</strong>. <strong>Content Writer</strong> and <strong>Video Editor</strong>.</p>
+      <p>Blogging since 2014.</p>
     </div>
+  </section>
+  <section id="portofolio">
+    {{- partial "gallery.html" . -}}
+    {{- partial "work.html" . -}}
+  </section>
+  <section id="quotes">
+    {{- partial "quote.html" . -}}
   </section>
 </article>
 {{ end }}

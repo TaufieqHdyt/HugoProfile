@@ -1,22 +1,8 @@
 {{ define "main" }}
 <article>
   <section id="portofolio">
-    <div id="work">
-      <h3>Recent Works</h3>
-      <p>Project I've been working on.</p>
-      <div class="projects">
-        {{ range (where .Pages "Section" "portofolio") }}
-        <div class="item">
-          <p>
-            <a href="{{ .RelPermalink }}">
-              {{ .Title }}
-            </a>
-          </p>
-          <p><small>{{ .Params.description }}</small></p>
-        </div>
-        {{ end }}
-      </div>
-    </div>
+    {{- partial "gallery.html" . -}}
+    {{- partial "work.html" . -}}
   </section>
 </article>
 {{ end }}
