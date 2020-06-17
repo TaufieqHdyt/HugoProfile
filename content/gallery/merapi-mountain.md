@@ -1,6 +1,6 @@
 ---
 title: Merapi Mountain
-date: 2020-06-22T17:31:53.944Z
+date: 2020-06-23T17:31:53.944Z
 description: Taken at 2013.
 thumbnail: /img/merapi-min.jpg
 ---
