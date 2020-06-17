@@ -2,7 +2,7 @@
 title: ArtTerror23's Portofolio Website
 date: 2018-06-06T05:00:00.000Z
 description: Developed in 2018.
-thumbnail: /img/artterror23.jpg
+thumbnail: /img/artterror23-min.jpg
 ---
 **Features:**
 
