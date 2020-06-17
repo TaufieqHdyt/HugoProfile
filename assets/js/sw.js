@@ -10,10 +10,8 @@ if (workbox) {
     runtime: "run-time",
   });
 
-  const FALLBACK_HTML_URL = "/offline.html";
   const version = workbox.core.cacheNames.suffix;
   workbox.precaching.precacheAndRoute([
-    { url: FALLBACK_HTML_URL, revision: null },
     { url: "/manifest.webmanifest", revision: null },
     { url: "/img/icons/AR23logo192.png", revision: null },
   ]);
