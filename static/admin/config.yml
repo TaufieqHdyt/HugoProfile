@@ -4,14 +4,6 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  - name: 'contact'
-    label: 'Contact'
-    folder: 'content/contact'
-    create: false
-    slug: '{{slug}}'
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'string' }
   - name: 'gallery'
     label: 'Gallery'
     folder: 'content/gallery'
@@ -50,3 +42,11 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Quote by', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'contact'
+    label: 'Contact'
+    folder: 'content/contact'
+    create: false
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
