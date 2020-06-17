@@ -3,6 +3,8 @@ title: ArtTerror23's Portofolio Website
 date: 2018-06-06T05:00:00.000Z
 description: Developed in 2018.
 ---
+![ArtTerror23 Website Homepage](/img/artterror23.jpg "ArtTerror23 Website Homepage")
+
 **Features:**
 
 1. Font Awesome
