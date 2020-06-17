@@ -1,0 +1,71 @@
+{
+ "name": "@TaufiqHdyt",
+ "short_name": "TaufiqHdyt",
+ "description": "A Personal Portofolio Web Page",
+ "lang": "en-US",
+ "dir": "ltr",
+ "theme_color": "#2196f3",
+ "start_url": ".",
+ "background_color": "#212121",
+ "display": "standalone",
+ "orientation": "portrait-primary",
+ "icons": [{
+   "src": "/img/icons/AR23logo72.png",
+   "sizes": "72x72",
+   "type": "image/png"
+  }, {
+   "src": "/img/icons/AR23logo96.png",
+   "sizes": "96x96",
+   "type": "image/png"
+  }, {
+   "src": "/img/icons/AR23logo128.png",
+   "sizes": "128x128",
+   "type": "image/png"
+  }, {
+   "src": "/img/icons/AR23logo144.png",
+   "sizes": "144x144",
+   "type": "image/png"
+  }, {
+   "src": "/img/icons/AR23logo152.png",
+   "sizes": "152x152",
+   "type": "image/png"
+  }, {
+   "src": "/img/icons/AR23logo192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  }, {
+   "src": "/img/icons/AR23logo384.png",
+   "sizes": "384x384",
+   "type": "image/png"
+  }, {
+   "src": "/img/icons/AR23logo512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }, {
+   "src": "/img/icons/maskable_icon.png",
+   "sizes": "256x256",
+   "type": "image/png",
+   "purpose":"any maskable"
+  }],
+  "shortcuts": [{
+    "name": "About TaufiqHdyt",
+    "short-name":"Overview",
+    "description": "Profile overview about TaufiqHdyt's Gallery, Work, Contact, and Social Media.",
+    "url": "/",
+    "icons": [{
+      "src": "/img/icons/maskable_icon.png",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }]
+  }, {
+    "name": "Contact TaufiqHdyt",
+    "short-name":"Contact",
+    "description": "Contact form to get in touch with TaufiqHdyt.",
+    "url": "/contact",
+    "icons": [{
+      "src": "/img/icons/maskable_icon.png",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }]
+  }]
+}
