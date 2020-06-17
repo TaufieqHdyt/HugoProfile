@@ -7,6 +7,9 @@
   {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
   {{ hugo.Generator }}
 
+
+  <link rel="apple-touch-icon" href="{{ `img/icons/AR23logo192.png` | absURL }}" sizes="128x128" />
+  <link rel="shortcut icon" href="{{ `img/icons/AR23logo192.png` | absURL }}" type="image/png">
   <meta name="theme-color" content="#2196f3" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -17,8 +20,5 @@
 
   {{ $styles := resources.Get "css/style.css" | minify }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}">
-
-  <link rel="shortcut icon" href="{{ `img/icons/AR23logo192.png` | absURL }} " type="image/png">
-  <link rel="icon" href="{{ `img/icons/AR23logo192.png` | absURL }} " type="image/png">
 
 </head>
