@@ -7,7 +7,20 @@ workbox.routing.registerRoute(
     plugins: [
       new workbox.expiration.ExpirationPlugin({
         maxEntries: 60,
-        maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+        maxAgeSeconds: 30 * 24 * 60 * 60,
+      }),
+    ],
+  }),
+);
+
+workbox.routing.registerRoute(
+  /\.(?:html|js|css)$/,
+  new workbox.strategies.CacheFirst({
+    cacheName: 'hdyt',
+    plugins: [
+      new workbox.expiration.ExpirationPlugin({
+        maxEntries: 60,
+        maxAgeSeconds: 7 * 24 * 60 * 60,
       }),
     ],
   }),
