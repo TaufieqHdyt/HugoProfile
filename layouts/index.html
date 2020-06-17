@@ -11,26 +11,38 @@
 </head>
 
 <body>
+  
+  <main>
 
   <header>
-    <section>Logo</section>
+    <section id="profile-image">
+      <div class="image-container">
+        IMG
+      </div>
+    </section>
+    <section id="profile-summary">
+      <div id="nickname">
+        <h1 class="name">TaufiqHdyt</h1>
+        <h2 class="position">Blogger</h2>
+      </div>
+    </section>
   </header>
 
-  <main>
-    <section>
-      {{ range (where .Pages "Section" "portofolio") }}
-      <article>
-        <a href="{{ .RelPermalink }}">
-          {{ .Title }}
-        </a>
-      </article>
-      {{ end }}
-    </section>
-  </main>
-
+  <section>
+    {{ range (where .Pages "Section" "portofolio") }}
+    <article>
+      <a href="{{ .RelPermalink }}">
+        {{ .Title }}
+      </a>
+    </article>
+    {{ end }}
+  </section>
+  
   <footer>
     <section>Footer</section>
   </footer>
+  
+  </main>
 
 </body>
 
