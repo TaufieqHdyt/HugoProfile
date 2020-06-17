@@ -6,7 +6,7 @@
       <p>Project I've been working on.</p>
       <div class="projects">
         {{ range (where .Pages "Section" "portofolio") }}
-        <div>
+        <div class="item">
           <p>
             <a href="{{ .RelPermalink }}">
               {{ .Title }}

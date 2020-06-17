@@ -2,10 +2,12 @@
   {{ .Title }} &ndash; {{ .Site.Title }}
 {{ end }}
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-<p class="date">{{ .Date }}</p>
-<p class="description">{{ .Params.description }}</p>
-<article class="content">
-  {{ .Content }}
+<article>
+  <h1>{{ .Title }}</h1>
+  <time datetime="{{ .Date }}">{{ .PublishDate.Format "January 2, 2006" }}</time>
+  <p class="description">{{ .Params.description }}</p>
+  <div class="content">
+    {{ .Content }}
+  </div>
 </article>
 {{ end }}
