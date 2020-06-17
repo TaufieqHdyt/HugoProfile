@@ -4,7 +4,7 @@
   <div class="quote-list">
     {{ range (where .Pages "Section" "quote") }}
     <blockquote>
-      <p>{{ .Content }}</p>
+      {{ .Content }}
       <cite>— {{ .Params.description }}</cite>
     </blockquote>
     {{  end  }}
