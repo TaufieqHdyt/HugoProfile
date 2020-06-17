@@ -18,9 +18,13 @@
 
   <main>
     <section>
+      {{ range (where .Pages "Section" "blog") }}
       <article>
-        Article
+        <a href="{{ .RelPermalink }}">
+          {{ .Title }}
+        </a>
       </article>
+      {{ end }}
     </section>
   </main>
 
