@@ -1,6 +1,7 @@
 baseURL = "https://me.taufiqhdyt.com/"
 languageCode = "en-us"
 title = "TaufiqHdyt"
+enableRobotsTXT = true
 
 [params]
   author = "TaufiqHdyt"

@@ -1,0 +1,8 @@
+User-agent: *
+
+{{ range .Site.Pages }}
+Disallow: {{ .RelPermalink }}
+{{end}}
+Allow: /
+
+Sitemap: {{ "sitemap.xml" | absLangURL }}
