@@ -1,3 +1,7 @@
 baseURL = "https://me.taufiqhdyt.com/"
 languageCode = "en-us"
 title = "TaufiqHdyt"
+
+[params]
+  author = "TaufiqHdyt"
+  description = "About TaufiqHdyt and His Works"
