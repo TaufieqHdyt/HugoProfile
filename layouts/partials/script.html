@@ -1,7 +1,8 @@
+{{ $swjs := resources.Get "sw.js" | minify }}
 <script>
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker
-      .register("/sw.js", { scope: "/" })
+      .register("{{ $swjs.Permalink }}", { scope: "/" })
       .then(function (registration) {
         console.log("Service Worker Registered");
       });

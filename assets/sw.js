@@ -1,16 +1,14 @@
 const CACHE_VERSION = 1;
 
 const BASE_CACHE_FILES = [
-  "/style.min.css",
-  "/script.js",
-  "/search.json",
-  "/manifest.json",
-  "/favicon.png",
+  "/css/style.min.css",
+  "/manifest.webmanifest",
+  "/img/icons/AR23logo144.png",
 ];
 
-const OFFLINE_CACHE_FILES = ["/style.min.css", "/script.js", "/offline/index.html"];
+const OFFLINE_CACHE_FILES = ["/css/style.min.css", "/offline/index.html"];
 
-const NOT_FOUND_CACHE_FILES = ["/style.min.css", "/script.js", "/404.html"];
+const NOT_FOUND_CACHE_FILES = ["/css/style.min.css", "/404.html"];
 
 const OFFLINE_PAGE = "/offline/index.html";
 const NOT_FOUND_PAGE = "/404.html";
