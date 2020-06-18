@@ -2,7 +2,7 @@
   <h3>Recent Works</h3>
   <p>Project I've been working on.</p>
   <div class="projects">
-    {{ range (where .Pages "Section" "portofolio") }}
+    {{ range (where .Pages "Section" "project") }}
     <div class="item">
       <div class="container">
         <img srcset="{{ .Params.thumbnail }} 300w" width="100%" alt="{{ .Params.Title }}">
