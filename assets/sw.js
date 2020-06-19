@@ -4,6 +4,7 @@ const BASE_CACHE_FILES = [
   "/css/style.min.css",
   "/manifest.webmanifest",
   "/img/icons/AR23logo144.png",
+  "/img/icons/AR23logo192.png",
 ];
 
 const OFFLINE_CACHE_FILES = ["/css/style.min.css", "/offline/index.html"];
