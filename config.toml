@@ -2,6 +2,7 @@ baseURL = "https://me.taufiqhdyt.com/"
 languageCode = "en-us"
 title = "TaufiqHdyt"
 enableRobotsTXT = true
+googleAnalytics = "UA-70411629-16"
 
 [params]
   author = "TaufiqHdyt"
@@ -12,7 +13,7 @@ enableRobotsTXT = true
     disable = true
   [privacy.googleAnalytics]
     anonymizeIP = true
-    disable = true
+    disable = false
     respectDoNotTrack = true
     useSessionStorage = true
   [privacy.instagram]
