@@ -233,14 +233,14 @@ div.goto {
   display: grid;
   grid-column: 1 / span 2;
 }
-a.button {
+input[type="submit"].button, a.button {
   padding: .5rem 1rem;
   background-color: var(--main-bg);
   border: 1px solid var(--main-bg);
   border-radius: .5rem;
   text-decoration: unset;
 }
-a.button:hover {
+input[type="submit"].button:hover, a.button:hover {
   background-color: var(--bg);
   color: var(--text-colors);
 }
