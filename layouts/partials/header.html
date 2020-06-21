@@ -2,7 +2,7 @@
   <section id="profile-image">
     <div class="image-container">
       {{ $avatar := resources.Get "img/avatar-min.jpg" }}
-      {{ $img := $avatar.Resize "100x100 q85" }}
+      {{ $img := $avatar.Resize "100x100" }}
       <img src="{{ $img.RelPermalink }}" alt="">
     </div>
   </section>
