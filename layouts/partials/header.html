@@ -1,7 +1,8 @@
 <header>
   <section id="profile-image">
     <div class="image-container">
-      <img src="{{ .Sites.First.Home.RelPermalink }}img/avatar-min.jpg" alt="">
+      {{ $avatar := resources.Get "img/avatar-min.jpg" }}
+      <img src="{{ $avatar.RelPermalink }}" alt="">
     </div>
   </section>
   <section id="profile-summary">
