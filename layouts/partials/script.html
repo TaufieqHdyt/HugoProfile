@@ -2,7 +2,7 @@
 <script>
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker
-      .register("{{ $swjs.Permalink }}", { scope: "/" })
+      .register("{{ $swjs.RelPermalink }}", { scope: "/" })
       .then(function (registration) {
         console.log("Service Worker Registered");
       });
