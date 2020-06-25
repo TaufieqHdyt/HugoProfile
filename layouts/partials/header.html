@@ -3,7 +3,9 @@
     <div class="image-container">
       {{ $avatar := resources.Get "img/avatar-min.jpg" }}
       {{ $img := $avatar.Resize "100x100" }}
-      <img src="{{ $img.RelPermalink }}" alt="">
+      <a href="{{ .Sites.First.Home.RelPermalink }}">
+        <img src="{{ $img.RelPermalink }}" alt="Taufiq Hdyt avatar">
+      </a>
     </div>
   </section>
   <section id="profile-summary">
