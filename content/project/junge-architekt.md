@@ -8,3 +8,7 @@ thumbnail: /img/jungearch-min.jpg
 
 1. Slideshow Gallery
 2. Responsive Web Design
+
+**Demo**
+
+<https://io.taufiqhdyt.com/JungeArch/>
