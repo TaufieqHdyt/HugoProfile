@@ -185,6 +185,11 @@ blockquote cite {
 article.singlepage {
   display:unset;
 }
+div.content figure {
+  background-color: var(--main-bg);
+  border-radius: .5rem;
+  overflow: hidden;
+}
 div.content figure img {
   width:100%;
 }
@@ -194,6 +199,7 @@ div.content figcaption h5 {
 }
 div.content ol, div.content ul {
   width:50%;
+  margin: 0 auto;
   text-align: left;
 }
 
