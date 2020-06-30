@@ -6,6 +6,8 @@ thumbnail: /img/artterror23-min.jpg
 ---
 ![ArtTerror23's Portofolio Website](/img/artterror23.jpg "ArtTerror23's Portofolio Website")
 
+{{< img src="/img/artterror23.jpg" title="ArtTerror23's Portofolio Website" >}}
+
 **Features:**
 
 1. Font Awesome
