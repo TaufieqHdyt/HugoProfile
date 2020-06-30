@@ -4,7 +4,7 @@ date: 2020-06-28T11:32:23.411Z
 description: Developed in 2020.
 thumbnail: /img/taufiqhdyt-min.png
 ---
-![TaufiqHdyt's Personal Website](/img/taufiqhdyt.png "TaufiqHdyt's Personal Website")
+{{< img src="/img/taufiqhdyt.png" title="TaufiqHdyt's Personal Website" >}}
 
 
 **Features**
@@ -12,6 +12,7 @@ thumbnail: /img/taufiqhdyt-min.png
 1. Based on Hugo
 2. Support Netlify CMS
 3. Support PWA
+4. Pure HTML and JS
 
 **Demo**
 
