@@ -3,6 +3,7 @@ const CACHE_VERSION = 1;
 const BASE_CACHE_FILES = [
   "/css/style.min.css",
   "/manifest.webmanifest",
+  "/img/icons/AR23logo144.png",
   "/img/icons/AR23logo192.png",
 ];
 
