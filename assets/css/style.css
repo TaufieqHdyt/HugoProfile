@@ -197,6 +197,9 @@ div.content figcaption h5 {
   margin: 0;
   padding: .5rem;
 }
+div.content img {
+  width: 100%;
+}
 div.content ol, div.content ul {
   width:50%;
   margin: 0 auto;

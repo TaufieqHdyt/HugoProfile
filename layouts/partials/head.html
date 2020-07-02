@@ -7,8 +7,9 @@
   {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
   {{ hugo.Generator }}
 
-  <link rel="apple-touch-icon" href="{{ `img/icons/AR23logo192.png` | relURL }}" sizes="128x128" />
-  <link rel="shortcut icon" href="{{ `img/icons/AR23logo192.png` | relURL }}" type="image/png">
+  {{ $icon := resources.Get "img/icons/AR23logo192.png" }}
+  <link rel="apple-touch-icon" href="{{ $icon.RelPermalink }}" sizes="128x128" />
+  <link rel="shortcut icon" href="{{ $icon.RelPermalink }}" type="image/png">
   <meta name="theme-color" content="#2196f3" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />

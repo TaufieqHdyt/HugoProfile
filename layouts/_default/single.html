@@ -7,6 +7,16 @@
   <time datetime="{{ .Date }}">{{ .PublishDate.Format "January 2, 2006" }}</time>
   <p class="description">{{ .Params.description }}</p>
   <div class="content">
+    <figure>
+      {{ with .Params.thumbnail }}
+      {{ $img := resources.Get . }}
+      {{ $thumb := $img.Resize "800x" }}
+      <img src="{{ $thumb.RelPermalink }}">
+      {{ end }}
+      <figcaption>
+        <h5>{{ .Page.Title }}</h5>
+      </figcaption>
+    </figure>
     {{ .Content }}
   </div>
 </article>

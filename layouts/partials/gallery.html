@@ -5,7 +5,13 @@
     {{ range (where .Pages "Section" "gallery") }}
     <div class="item">
       <div class="container">
-        <img src="{{ .Params.thumbnail }}" width="100%" alt="{{ .Params.Title }}">
+        <img
+        {{ with .Params.thumbnail }}
+        {{ $img := resources.Get . }}
+        {{ $thumb := $img.Resize "350x" }}
+        src="{{ $thumb.RelPermalink }}" width="100%" 
+        {{ end }}
+        alt="{{ .Params.Title }}">
       </div>
       <p>
         <a href="{{ .RelPermalink }}">

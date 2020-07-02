@@ -2,11 +2,8 @@
 title: TaufiqHdyt's Personal Website
 date: 2020-06-28T11:32:23.411Z
 description: Developed in 2020.
-thumbnail: /img/taufiqhdyt-min.png
+thumbnail: /img/taufiqhdyt.png
 ---
-{{< img src="/img/taufiqhdyt.png" title="TaufiqHdyt's Personal Website" >}}
-
-
 **Features**
 
 1. Based on Hugo

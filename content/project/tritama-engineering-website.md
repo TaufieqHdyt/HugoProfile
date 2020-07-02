@@ -2,10 +2,8 @@
 title: Tritama Engineering Website
 date: 2019-09-25T16:00:50.123Z
 description: Developed in 2019.
-thumbnail: /img/tritamaeng-min.jpg
+thumbnail: /img/tritamaeng.jpg
 ---
-{{< img src="/img/tritamaeng.jpg" title="Tritama Engineering's Website" >}}
-
 **Features:**
 
 1. Responsive Web Design
