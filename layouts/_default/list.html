@@ -1,5 +1,14 @@
 {{ define "main" }}
 <article>
+  <section id="about">
+    <div id="resume">
+      <h3>About</h3>
+      <p>Hi, my name is <strong>Taufiq</strong>. I am from <strong>Solo, Indonesia</strong>.</p>
+      <p><strong>Web</strong> Enthusiast. Love in <strong>Mobile Photographing</strong>. <strong>Content Writer</strong> and <strong>Video Editor</strong>.</p>
+      <p>Blogging since 2014.</p>
+    </div>
+  </section>
+  <hr/>
   <section id="portofolio">
     {{- partial "gallery.html" . -}}
     {{- partial "work.html" . -}}
@@ -7,6 +16,16 @@
   <hr/>
   <section id="quotes">
     {{- partial "quote.html" . -}}
+  </section>
+  <hr/>
+  <section id="contact">
+    <div class="email">
+      <h3>Email</h3>
+      <p>Get in touch with me via <a href="mailto:me@taufiqhdyt.com?Subject=Hello+Taufiq" target="_top">Email</a> or via Contact Form below.</p>
+      <div class="goto">
+        <a href="{{ .Sites.First.Home.RelPermalink }}contact" class="button">Contact Form</a>
+      </div>
+    </div>
   </section>
   <hr/>
   <section id="social">
