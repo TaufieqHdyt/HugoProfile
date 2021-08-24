@@ -1,0 +1,26 @@
+User-agent: *
+
+Disallow: /HugoProfile/project/
+Disallow: /HugoProfile/
+Disallow: /HugoProfile/project/taufiqhdyts-personal-website/
+Disallow: /HugoProfile/quote/commitment-and-consistency/
+Disallow: /HugoProfile/quote/
+Disallow: /HugoProfile/quote/be-kind/
+Disallow: /HugoProfile/404/
+Disallow: /HugoProfile/offline/
+Disallow: /HugoProfile/project/tritama-engineering-website/
+Disallow: /HugoProfile/project/junge-architekt/
+Disallow: /HugoProfile/gallery/
+Disallow: /HugoProfile/gallery/tambak-in-demak/
+Disallow: /HugoProfile/gallery/ds4-in-klayar-beach/
+Disallow: /HugoProfile/project/artterror23s-portofolio-website/
+Disallow: /HugoProfile/gallery/merbabu-mountain/
+Disallow: /HugoProfile/gallery/merapi-mountain/
+Disallow: /HugoProfile/categories/
+Disallow: /HugoProfile/contact/
+Disallow: /HugoProfile/tags/
+
+
+Allow: /
+
+Sitemap: https://taufieqhdyt.github.io/HugoProfile/sitemap.xml
