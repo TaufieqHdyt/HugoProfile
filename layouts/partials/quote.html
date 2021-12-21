@@ -2,7 +2,7 @@
   <h3>Quotes</h3>
   <p>Some Inspirational Quote.</p>
   <div class="quote-list">
-    {{ range (where .Pages "Section" "quote") }}
+    {{ range (where .Site.RegularPages "Section" "quote") }}
     <blockquote>
       {{ .Content }}
       <cite>— {{ .Params.description }}</cite>

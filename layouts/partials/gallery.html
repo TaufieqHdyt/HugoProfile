@@ -2,7 +2,7 @@
   <h3>Gallery</h3>
   <p>Photograph Showcase.</p>
   <div class="photos">
-    {{ range (where .Pages "Section" "gallery") }}
+    {{ range (where .Site.RegularPages "Section" "gallery") }}
     <div class="item">
       <div class="container">
         <img
