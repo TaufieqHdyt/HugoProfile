@@ -3,10 +3,18 @@ languageCode = "en-us"
 title = "TaufiqHdyt"
 enableRobotsTXT = true
 googleAnalytics = "UA-70411629-16"
+sectionPagesMenu = "nav"
 
 [params]
   author = "TaufiqHdyt"
   description = "About TaufiqHdyt and His Works"
+
+[menu]
+[[menu.nav]]
+  title = 'Home'
+  name = 'Home'
+  url = '/'
+  weight = 100
 
 [privacy]
   [privacy.disqus]
