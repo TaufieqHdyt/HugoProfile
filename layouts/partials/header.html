@@ -14,4 +14,12 @@
       <h2 class="position">Blogger</h2>
     </div>
   </section>
+  <section id="nav">
+    <nav class="main-nav">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.nav }}
+      <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "nav" .) ($currentPage.HasMenuCurrent "nav" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+  </section>
 </header>
