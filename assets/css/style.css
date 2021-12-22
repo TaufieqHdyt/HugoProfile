@@ -1,11 +1,13 @@
 /* Variables */
 :root {
-  --native-font-stack:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --body-font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   --display-font:Constantia,'Lucida Bright',Lucidabright,'Lucida Serif',Lucida,'DejaVu Serif','Bitstream Vera Serif','Liberation Serif',Georgia,serif;
   --mono-font:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
   --max-width:768px;
   --primary-color:#2196f3;
   --shading-color:#0d47a1;
+  --success-color:#4CAF50;
+  --danger-color:#F44336;
   --main-colors:#424242;
   --link-colors:#616161;
   --link-hover-colors:var(--primary-color);
@@ -18,7 +20,16 @@
   --accent:#fafafa;
   --image-filter:grayscale(.5);
 }
-
+:root article img {
+  filter:var(--image-filter);
+  transition: .2s;
+}
+:root article img:hover {
+  filter:unset;
+}
+:root article a:focus-within .item img {
+  filter:unset;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --main-colors:#F5F5F5;
@@ -28,13 +39,17 @@
     --alt-text:#616161;
     --link:#757575;
     --main-bg:#616161;
-    --bg:#212121;
-    --accent:#424242;
+    --bg:#424242;
+    --accent:#212121;
   }
-  article img {
+  :root article img {
     filter:var(--image-filter);
+    transition: .2s;
   }
-  article img:hover {
+  :root article img:hover {
+    filter:unset;
+  }
+  :root article a:focus-within .item img {
     filter:unset;
   }
 }
@@ -46,7 +61,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0;user-select:no
 body {
   width:100%;
   min-height:50vh;
-  font-family:var(--native-font-stack);
+  font-family:var(--body-font);
   background-color:var(--bg);
   color:var(--text);
 }
