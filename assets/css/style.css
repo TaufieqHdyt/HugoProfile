@@ -90,6 +90,32 @@ header {
   padding:2rem;
   border-radius:1rem 1rem 0 0;
 }
+nav {
+  padding: .5rem 1rem;
+  display: inline-grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+nav a {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--main-bg);
+  text-decoration: unset;
+  transition: .2s;
+  color: var(--main-colors);
+  margin: .15rem;
+  font-weight: 700;
+  text-align: center;
+}
+nav a:hover {
+  border: 1px solid var(--accent);
+  background-color: var(--accent);
+  color: var(--main-colors);
+}
+nav a.active {
+  border: 1px solid var(--accent);
+  background-color: var(--accent);
+  color: var(--main-colors);
+}
 article {
   display:grid;
   grid-template-columns:auto;
@@ -127,11 +153,12 @@ section#profile-image {
 section#profile-summary {
   display:grid;
   place-content:center;
-}
-#profile-summary {
   text-align:center;
 }
-
+section#nav {
+  display:grid;
+  place-content:center;
+}
 section#portofolio {
   display:grid;
   grid-gap:1.5rem;
