@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <title>{{if .IsHome}}{{ .Title }}{{else}}{{ .Title }} | {{ .Site.Title }}{{end}}</title>
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
   {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
   {{ hugo.Generator }}
